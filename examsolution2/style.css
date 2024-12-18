@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ 
+#container{
+    display: flex;
+    margin-left: 70px;
+}
+#companylogo{
+    margin-top: 20px;
+    width: 600px;
+    height: 600px;
+}
+#imglogo{
+    width: 600px;
+    height: 600px;
+}
+#Register{
+    text-align:center;
+}
+#user-type{
+    width:120px;
+    height:30px;
+    padding-left: 4px;
+    margin: 18px;
+    background-color: rgb(86, 108, 134);
+}
+#register-page{
+    margin-top: 20px;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(154, 169, 178);
+}
+
+#register-form{
+    margin-top: 10px;
+     padding-left: 20px;
+     text-align: center;
+} 
+#full-name{
+    
+    padding-left: 24px;
+    width:400px;
+    height: 20px;
+    margin: 4px;
+}
+#Full_Name{
+      text-transform: uppercase;
+      font-size: medium;
+      padding-right: 335px;
+      margin: 2px;
+    }
+    #User_Name{
+        text-transform: uppercase;
+      font-size: medium;
+      padding-right: 335px;
+      margin: 2px;
+    }
+    #username{
+     padding-left: 24px;
+    width:400px;
+    height: 20px;
+    margin: 4px;
+    }
+    #Email{
+        text-transform: uppercase;
+      font-size: medium;
+      padding-right: 375px;
+      margin: 2px;
+    }
+    #email{
+     padding-left: 24px;
+    width:400px;
+    height: 20px;
+    margin: 4px;
+    }
+    #Mobile_No{
+        text-transform: uppercase;
+      font-size: medium;
+      padding-right: 335px;
+      margin: 2px;
+    }
+    #mobile{
+     padding-left: 24px;
+    width:400px;
+    height: 20px;
+    margin: 4px;
+    }
+ #Current_Study{
+    text-transform: uppercase;
+      font-size: medium;
+      padding-right: 225px;
+      margin: 2px;
+ }
+ #courese-name{
+    padding-left: 24px;
+    width:180px;
+    height: 20px;
+    margin: 4px;
+   
+ }
+#current-study-year{
+    padding-left: 24px;
+    width:180px;
+    height: 20px;
+    margin: 4px;
+}
+    #University_Details{
+        text-transform: uppercase;
+        font-size: medium;
+        padding-right: 256px;
+        margin: 2px;  
+    }
+  #university-name{
+    padding-left: 24px;
+    width:180px;
+    height: 20px;
+    margin: 4px;
+  }
+  #university-area-pin-code{
+    padding-left: 24px;
+    width:180px;
+    height: 20px;
+    margin: 4px;
+  }
+#university-country{
+    padding-left: 24px;
+    width:180px;
+    height: 20px;
+    margin: 4px;
+}
+#university-state{
+    padding-left: 24px;
+    width:180px;
+    height: 20px;
+    margin: 4px;
+}
+#Password{
+    text-transform: uppercase;
+        font-size: medium;
+        padding-right: 335px;
+        margin: 2px;  
+}
+#passwordplace{
+    padding-left: 24px;
+    width:180px;
+    height: 20px;
+    margin: 4px;
+}
+#confirm-password{
+    padding-left: 24px;
+    width:180px;
+    height: 20px;
+    margin: 4px;
+}
+#button2{
+    margin-top: 10px;
+    padding-left: 12px;
+    width:200px;
+    height: 33px;
+   
+}
+#Already{
+   text-align: center;
+   margin-top:12px;
+}
+<!-----------------------------loign page ------------------->
+#login-page{
+    background-color: rgb(154, 169, 178);
+    width: 600px;
+    height: 600px;
+}
+
+#Login{
+    margin-top: 10px;
+    padding-left: 12px;
+    width:200px;
+    height: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+

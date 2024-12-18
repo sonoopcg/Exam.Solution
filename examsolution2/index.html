@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration and Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="companylogo">
+     <img src="./image/book home logo design.png" id="imglogo">
+    </div>
+    <div id="register-page" class="page">
+      <h1 id="Register">Register</h1>
+      <select id="user-type" onchange="toggleForm()">
+        <option value="aspirant">As an Aspirant</option>
+        <option value="mentor">As a Mentor</option>
+      </select>
+      <form id="register-form">
+        <p id="Full_Name"> Full Name</p>
+        <input type="text" id="full-name" placeholder="Full Name" required>
+        <p id="User_Name">User Name</p>
+        <input type="text" id="username" placeholder="Username" required>
+        <p id="Email"> Email</p>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <p id="Mobile_No"> Mobile No</p>
+        <input type="tel" id="mobile" placeholder="Mobile No" required>
+        <div id="Study-detail">
+            <p id="Current_Study">Current Study Details</p>
+          <input type="text" id="courese-name" placeholder="Courese name">
+          <input type="text" id="current-study-year" placeholder="Current study year">
+        </div>
+        <div id="University-detail">
+            <p id="University_Details">University Details</p>
+          <input type="text" id="university-name" placeholder=" Name">
+          <input type="text" id="university-area-pin-code" placeholder="Pincode">
+          <br>
+          <input type="text" id="university-country" placeholder=" Country">
+          <input type="text" id="university-state" placeholder="State">
+         
+        </div>
+
+        <div id="mentor-details" style="display: none;">
+          <input type="text" id="company-details" placeholder="Company Details">
+          <input type="text" id="position" placeholder="Position in Company">
+          <input type="number" id="experience" placeholder="Years of Experience">
+          <input type="file" id="document" placeholder="marksheet"  name="document" accept=".pdf, .doc, .docx, .txt, .xlsx, .pptx"><br><br>
+          
+        </div>
+        <div id="password">
+        <p id="Password">Password</p>
+        <input type="password" id="passwordplace" placeholder="Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+       </div>
+       <div id="button">
+        <button id="button2"   type="button" onclick="registerUser()">Register</button>
+       </div>  
+    </form>
+      <p id="Already">Already have an account? <a href="#" onclick="showLoginPage()">Login here</a></p>
+    </div>
+<!---------------------------------Login page---------------------------------------------->
+    <div id="login-page" class="page" style="display: none;">
+      <h1 id="Login">Login</h1>
+      <form id="login-form">
+        <p> Username/Email</p>
+        <input type="text" id="login-username" placeholder="Username or Email" required>
+        <p> Password</p>
+        <input type="password" id="login-password" placeholder="Password" required>
+       <div id="button2">
+        <button type="button" onclick="loginUser()">Login</button>
+        </div>
+      </form>
+      <div id="register_page">
+      <p>Don't have an account? <a href="#" onclick="showRegisterPage()">Register here</a></p>
+     </div>
+    </div>
+<!-------------------------------------After the login this page is show-------------------------------------------->
+    <div id="profile-page" class="page" style="display: none;">
+      <h1>Welcome, <span id="welcome-name"></span></h1>
+      <h2>List of Profiles:</h2>
+      <ul id="profile-list"> </ul>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

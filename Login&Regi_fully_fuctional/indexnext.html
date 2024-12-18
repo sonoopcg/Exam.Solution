@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration and Login</title>
+  <link rel="stylesheet" href="./stylenext.css">
+</head>
+<body>
+  <div id="container">
+    <div id="companylogo">
+      <img src="./imagee/book home logo design.png" id="imglogo" alt="Company Logo">
+    </div>
+    <div id="register-page" class="page">
+      <h1 id="Register">Register</h1>
+      <select id="user-type" onchange="toggleForm()">
+        <option value="aspirant">As an Aspirant</option>
+        <option value="mentor">As a Mentor</option>
+      </select>
+      <form id="register-form">
+        <p>Full Name</p>
+        <input type="text" id="full-name" placeholder="Full Name" required>
+        <p>Username</p>
+        <input type="text" id="username" placeholder="Username" required>
+        <p>Email</p>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <p>Mobile No</p>
+        <input type="tel" id="mobile" placeholder="Mobile No" required>
+
+        <div id="study-detail">
+          <p>Current Study Details</p>
+          <input type="text" id="course-name" placeholder="Course Name">
+          <input type="text" id="current-study-year" placeholder="Current Study Year">
+        </div>
+
+        <div id="mentor-details" style="display: none;">
+          <p>Company Details</p>
+          <input type="text" id="company-details" placeholder="Company Details">
+          <p>Position</p>
+          <input type="text" id="position" placeholder="Position in Company">
+          <p>Experience (Years)</p>
+          <input type="number" id="experience" placeholder="Years of Experience">
+        </div>
+
+        <p>Password</p>
+        <input type="password" id="password" placeholder="Password" required>
+        <p>Confirm Password</p>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+
+        <button type="button" onclick="registerUser()">Register</button>
+      </form>
+      <p>Already have an account? <a href="#" onclick="showLoginPage()">Login here</a></p>
+    </div>
+
+    <div id="login-page" class="page" style="display: none;">
+      <h1>Login</h1>
+      <form id="login-form">
+        <p>Username/Email</p>
+        <input type="text" id="login-username" placeholder="Username or Email" required>
+        <p>Password</p>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button type="button" onclick="loginUser()">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" onclick="showRegisterPage()">Register here</a></p>
+    </div>
+
+    <div id="profile-page" class="page" style="display: none;">
+      <h1>Welcome, <span id="welcome-name"></span></h1>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <script src="./scriptnext.js"></script>
+</body>
+</html>
